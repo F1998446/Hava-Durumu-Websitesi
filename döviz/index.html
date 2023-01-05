@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Döviz Çevirici</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+   <!-- <h1 style="color: white; text-align: center; font-size: 50px;">Döviz Çevirici</h1>-->
+    <div class="container1">
+      
+      <form action="#">
+       
+        <div class="drop-list">
+          <div class="from">
+            
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select>  </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt" style="color: whit;"></i></div>
+          <div class="to">
+            
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/np.png" alt="flag">
+              <select>  </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="amount">
+          <p style="color: white;">Tutar Giriniz</p>
+          <input type="text" value="1" width="50px">
+        </div>
+        <div class="exchange-rate">İşleminiz gerçekleşiyor...</div>
+        <button><b>ÇEVİR</b></button>
+      </form>
+    </div>
+    <script src="country-list.js"></script>
+    
+
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
