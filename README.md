@@ -4,7 +4,5 @@ Birlestirilmis.html
 Hocam projeyi çalıştırırken dosya konumlarını değiştirmeniz gerekiyor, yoksa proje çalışmayacaktır.
 
 Hocam sarı ile çizelen çizgi weatherApp dosyanın içerinsindeki weather.html dosyanın konumudur.
-
-kırmızı ile çizilen çizgi ülke hakınndaki dosyanın içerisindeki index.html dosyanın konumudur.
-
-gri çizilen çizgi döviz dosyanın içerisindeki index.html dosyanın konumudur.
+Kırmızı ile çizilen çizgi ülke hakınndaki dosyanın içerisindeki index.html dosyanın konumudur.
+Gri ile çizilen çizgi döviz dosyanın içerisindeki index.html dosyanın konumudur.
