@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <div class="header">
+
+      <div class="leftbox">
+        <h1>WEATHER APP</h1>
+      </div>
+      <div class="rightbox">
+        <ul class="">
+          <li><a href ="#home">Home</a></li>
+          <li><a href ="#home">Currency</a></li>
+          <li><a href ="#home">Other</a></li>
+          <li><a href ="#home">About</a></li>
+          
+        </ul>
+        
+      </div>
+
+    </div>
+
+
+    <div class="box">
+
+      <div class="wrapper_R">
+
+        <div class="container">
+          <div class="search-container">
+
+            <input
+              type="text"
+              placeholder="Enter a city name"
+              id="city"
+              value="İstanbul"
+            />
+
+            <button id="search-btn">Arama yap</button>
+          
+          </div>
+          <div id="result"></div>
+        </div>
+        
+      </div> 
+
+      <div class="wrapper_L">
+
+        <div class="forcastH">
+          <p class="cast-header">Upcoming forecast</p>
+          <div class="templist">
+
+            <div class="next">
+                <div>
+                    <p class="time">8:30 PM</p>
+                    <p>29 °C / 25 °C</p>
+                </div>
+                <p class="desc">Light Rain</p>
+            </div>
+
+            <div class="next">
+                <div>
+                    <p class="time">8:30 PM</p>
+                    <p>29 °C / 29 °C</p>
+                </div>
+                <p class="desc">Light Rain</p>
+            </div>
+
+            <div class="next">
+                <div>
+                    <p class="time">8:30 PM</p>
+                    <p>29 °C / 29 °C</p>
+                </div>
+                <p class="desc">Light Rain</p>
+            </div>
+
+            <div class="next">
+                <div>
+                    <p class="time">8:30 PM</p>
+                    <p>29 °C / 29 °C</p>
+                </div>
+                <p class="desc">Light Rain</p>
+            </div>
+
+            <div class="next">
+                <div>
+                    <p class="time">8:30 PM</p>
+                    <p>29 °C / 29 °C</p>
+                </div>
+                <p class="desc">Light Rain</p>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="forcastD">
+        <p class="cast-header"> Next 4 days forecast</p>
+        <div class="weekF">
+
+          <div class="dayF">
+              <p class="date">Sun Jul 03 2022</p>
+              <p>31 °C / 31 °C</p>
+              <p class="desc">Overcast Clouds</p>
+          </div>
+
+          <div class="dayF">
+              <p class="date">Sun Jul 03 2022</p>
+              <p>31 °C / 31 °C</p>
+              <p class="desc">Overcast Clouds</p>
+          </div>
+
+          <div class="dayF">
+              <p class="date">Sun Jul 03 2022</p>
+              <p>31 °C / 31 °C</p>
+              <p class="desc">Overcast Clouds</p>
+          </div>
+
+          <div class="dayF">
+              <p class="date">Sun Jul 03 2022</p>
+              <p>31 °C / 31 °C</p>
+              <p class="desc">Overcast Clouds</p>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Script -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

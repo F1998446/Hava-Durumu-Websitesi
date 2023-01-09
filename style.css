@@ -1,0 +1,314 @@
+html{
+  height: 100%;
+}
+
+body {
+ 
+  background-image: url(./rain4.jpeg);
+ /* background-color: rgb(46, 43, 43);*/
+  /*لتبقى الصورة ثابتة*/
+  background-attachment: fixed;
+  /*إزاحة داخلية*/
+  padding: 0.5rem 3rem;
+  /*أعدادات الخط*/
+  font-family: 'Roboto', sans-serif;
+  /**/
+  text-transform: capitalize;
+  /*لعدم تكرار الصور*/
+  background-repeat: no-repeat;
+  /*مركز الخلفية في المنتصف*/
+  background-position: center;
+  /*يأتي بطول الصورة فقط*/
+  background-size: cover;
+}
+/*---------------------------*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  
+  
+}
+
+.leftbox{
+position: relative;
+left: 0%;
+width: 20%;   
+float: left;
+}
+
+.header h1{
+  color: rgb(214, 147, 45);
+  text-decoration: underline;
+  font-family: 'Orbitron', sans-serif;
+}
+.rightbox{
+  width: 80%;
+}
+ul{
+  margin: 0;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+ }
+
+ li{
+  float: left;
+  list-style: none;
+  width: 140px;
+  padding: 7px;
+  margin-left: 50px;
+  border: none;
+  border-radius: 18px;
+  text-align: center;
+  color:black;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  background-color: rgb(214, 147, 45);
+  transition: 0.4s;
+ }
+
+ li a{
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+ }
+ li a:hover{
+  color: rgb(67, 62, 71);
+ }
+ li:hover{
+  padding: 10px;
+ }
+/*------------------------------------------*/
+.box{
+  /*يبقى ثابت نسبة لأبيه*/
+  display: flex;
+  /*background-color: blueviolet;*/
+  border-radius: 18px;
+  /**/
+  backdrop-filter: invert(25%);
+  
+}
+
+.wrapper_R {
+/**/
+font-size: 14px;
+/*background-color:rgb(117, 85, 85);*/
+/*يمكنك من أستخام الجهات الأربعة للعنصر نسبة لأبيه*/
+position: relative;
+/*العرض 40 بالمئة نسبة لأبيه*/
+width: 35%;
+/*الطول 600 بيكسل نسبة لأبيه*/
+height: 550px;
+/*أزاحة أعتمداً على reltive*/
+left: 65%;
+
+}
+.wrapper_L{
+/**/
+font-size: 18px;
+/*background-color:rgb(41, 8, 8);*/
+position: relative;
+height: 550px;
+width: 65%;
+right: 35%;
+
+}
+.container{
+  width: 70%;
+  height: 400px;
+  /*خلفية*/
+  /*background-color: rgb(170, 208, 241);*/
+  /*موقع الكتابة*/
+  text-align: center;
+  /*تدوير الحواف*/
+  border-radius: 10px;
+  /**/
+  border: 2px solid white;
+  /*إزاحة داخلية*/
+  padding: 3em 1.8em;
+  /*تكون فوق كل الغناصر لسهولة الحركة*/
+  position: absolute;
+  /*قيمة الفراغ العلوي*/
+  top: 20px;
+  /*قيمة فراغ اليمين*/
+  left:50px ;
+
+}
+
+.forcastH{
+width: 90%;
+height: 120px;
+/*background-color: white;*/
+text-align: center;
+border-radius: 10px;
+/**/
+/*border: 2px solid white;*/
+padding:3em 1.8em;
+position: absolute;
+top: 20px;
+left: 10px;
+
+}
+
+.forcastD{
+width: 90%;
+height: 120px;
+/*background-color: white;*/
+text-align: center;
+border-radius: 10px;
+/**/
+/*border: 2px solid white;*/
+padding:3em 1.8em;
+position: absolute;
+bottom: 90px;
+left: 10px;
+
+}
+/*---------------------------------------*/
+
+.search-container {
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+}
+.search-container input,
+.search-container button {
+  outline: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+}
+.search-container input {
+  padding: 5px 10px;
+  background-color: aliceblue;
+  border-bottom: 2px solid var(--transp-white-1);
+  font-weight: 300;
+  outline: none;
+}
+.search-container input::placeholder {
+  color: rgb(15, 9, 9);
+}
+
+.search-container button {
+  padding: 5px 10px;
+  color: aliceblue;
+  background: cadetblue;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#search-btn:hover{
+  padding: 7px;
+}
+#result h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  margin: 1.25em 0;
+}
+.weather,
+.desc {
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  line-height: 2em;
+}
+.weather {
+  margin-top: -0.7em;
+}
+#result img {
+  margin: 0.6em 0 0 0;
+  width: 6.2em;
+  filter: drop-shadow(0 1.8em 3.7em var(--shadow));
+}
+#result h1 {
+  font-size: 4em;
+  margin: 0.3em 0 0.7em 0;
+  line-height: 0;
+  font-weight: 400;
+  color: var(--white);
+}
+.temp-container {
+  display: flex;
+  justify-content: center;
+}
+.temp-container div {
+  padding: 0.3em 1em;
+}
+.temp-container div:first-child {
+  border-right: 1px solid var(--transp-white-1);
+}
+.temp-container .title {
+  font-weight: 600;
+  color: var(--white);
+}
+.temp-container .temp {
+  font-weight: 300;
+  color: var(--off-white);
+}
+.msg {
+  margin-top: 1.8em;
+  color: var(--white);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 450px) {
+  .wrapper {
+    font-size: 14px;
+  }
+}
+
+/*------------------------*/
+.cast-header{
+  color: aliceblue;
+  background: rgba(254, 189, 132, 0.539);
+  width: max-content;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
+.desc{
+  color: rgb(196, 255, 77);
+}
+
+.time,.date{
+  color: rgb(254, 189, 132);
+}
+
+.next{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin-left: 10px;
+  margin-top: 25px;
+  font-weight: 500;
+  display: inline-block;
+}
+.next p,.next h3{
+  margin: 3px 0;
+}
+
+.dayF{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+  margin-left: 14px;
+  margin-top: 0;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 18px;
+}
